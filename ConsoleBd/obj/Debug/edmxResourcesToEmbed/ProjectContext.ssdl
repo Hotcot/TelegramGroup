@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Telegram_Data_GropModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Telegram_Data_Grop.dbo.ClassData" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="ClassData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ResaltClass" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ResaltClass" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Telegram_Data_Grop.dbo.IndificatorData" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="IndificatorData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="IndificTeg" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IndificTeg" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Telegram_Data_Grop.dbo.LogData" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="LogData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="StartProcessingTime" />
+      <PropertyRef Name="EndProcessingTime" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LogMessage" Type="nvarchar(max)" />
+    <Property Name="StartProcessingTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="EndProcessingTime" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Telegram_Data_Grop.dbo.ParsData" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="ParsData">
+    <Key>
+      <PropertyRef Name="TextArticle" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="NameArticle" />
+      <PropertyRef Name="DateArticle" />
+    </Key>
+    <Property Name="TextArticle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameArticle" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateArticle" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Telegram_Data_Grop.dbo.TegsData" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="TegsData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Teg" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Teg" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Хранилище Telegram_Data_GropModelContainer">
+    <EntitySet Name="ClassData" EntityType="Self.ClassData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClassData].[Id] AS [Id], 
+    [ClassData].[ResaltClass] AS [ResaltClass]
+    FROM [dbo].[ClassData] AS [ClassData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IndificatorData" EntityType="Self.IndificatorData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IndificatorData].[Id] AS [Id], 
+    [IndificatorData].[IndificTeg] AS [IndificTeg]
+    FROM [dbo].[IndificatorData] AS [IndificatorData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LogData" EntityType="Self.LogData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LogData].[Id] AS [Id], 
+    [LogData].[LogMessage] AS [LogMessage], 
+    [LogData].[StartProcessingTime] AS [StartProcessingTime], 
+    [LogData].[EndProcessingTime] AS [EndProcessingTime]
+    FROM [dbo].[LogData] AS [LogData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ParsData" EntityType="Self.ParsData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ParsData].[TextArticle] AS [TextArticle], 
+    [ParsData].[Id] AS [Id], 
+    [ParsData].[NameArticle] AS [NameArticle], 
+    [ParsData].[DateArticle] AS [DateArticle]
+    FROM [dbo].[ParsData] AS [ParsData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TegsData" EntityType="Self.TegsData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TegsData].[Id] AS [Id], 
+    [TegsData].[Teg] AS [Teg]
+    FROM [dbo].[TegsData] AS [TegsData]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

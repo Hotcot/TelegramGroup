@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Telegram_Data_GropModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ClassData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ResaltClass" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ResaltClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IndificatorData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="IndificTeg" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IndificTeg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LogData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="StartProcessingTime" />
+      <PropertyRef Name="EndProcessingTime" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LogMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StartProcessingTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="EndProcessingTime" Type="Time" Nullable="false" Precision="7" />
+  </EntityType>
+  <EntityType Name="ParsData">
+    <Key>
+      <PropertyRef Name="TextArticle" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="NameArticle" />
+      <PropertyRef Name="DateArticle" />
+    </Key>
+    <Property Name="TextArticle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameArticle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DateArticle" Type="Time" Nullable="false" Precision="7" />
+  </EntityType>
+  <EntityType Name="TegsData">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Teg" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Teg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Telegram_Data_GropEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ClassData" EntityType="Self.ClassData" />
+    <EntitySet Name="IndificatorData" EntityType="Self.IndificatorData" />
+    <EntitySet Name="LogData" EntityType="Self.LogData" />
+    <EntitySet Name="ParsData" EntityType="Self.ParsData" />
+    <EntitySet Name="TegsData" EntityType="Self.TegsData" />
+  </EntityContainer>
+</Schema>

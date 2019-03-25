@@ -1,0 +1,13 @@
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\ConsoleBd.exe.config
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\ConsoleBd.exe
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\ConsoleBd.pdb
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\EntityFramework.dll
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\EntityFramework.SqlServer.dll
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\EntityFramework.xml
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\EntityFramework.SqlServer.xml
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\bin\Debug\ru\EntityFramework.resources.dll
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\obj\Debug\ConsoleBd.csprojAssemblyReference.cache
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\obj\Debug\ConsoleBd.csproj.CoreCompileInputs.cache
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\obj\Debug\ConsoleBd.csproj.CopyComplete
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\obj\Debug\ConsoleBd.exe
+E:\Aнутакое\Програмирование\C#\BigProgect\ConsoleBd\ConsoleBd\obj\Debug\ConsoleBd.pdb

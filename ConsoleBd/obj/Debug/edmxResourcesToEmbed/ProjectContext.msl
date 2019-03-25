@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Telegram_Data_GropModelContainer" CdmEntityContainer="Telegram_Data_GropEntities">
+    <EntitySetMapping Name="ClassData">
+      <EntityTypeMapping TypeName="Telegram_Data_GropModel.ClassData">
+        <MappingFragment StoreEntitySet="ClassData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ResaltClass" ColumnName="ResaltClass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndificatorData">
+      <EntityTypeMapping TypeName="Telegram_Data_GropModel.IndificatorData">
+        <MappingFragment StoreEntitySet="IndificatorData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IndificTeg" ColumnName="IndificTeg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogData">
+      <EntityTypeMapping TypeName="Telegram_Data_GropModel.LogData">
+        <MappingFragment StoreEntitySet="LogData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LogMessage" ColumnName="LogMessage" />
+          <ScalarProperty Name="StartProcessingTime" ColumnName="StartProcessingTime" />
+          <ScalarProperty Name="EndProcessingTime" ColumnName="EndProcessingTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParsData">
+      <EntityTypeMapping TypeName="Telegram_Data_GropModel.ParsData">
+        <MappingFragment StoreEntitySet="ParsData">
+          <ScalarProperty Name="TextArticle" ColumnName="TextArticle" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameArticle" ColumnName="NameArticle" />
+          <ScalarProperty Name="DateArticle" ColumnName="DateArticle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TegsData">
+      <EntityTypeMapping TypeName="Telegram_Data_GropModel.TegsData">
+        <MappingFragment StoreEntitySet="TegsData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Teg" ColumnName="Teg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
